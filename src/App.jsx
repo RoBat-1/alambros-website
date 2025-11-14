@@ -35,6 +35,12 @@ function App() {
       title: 'Custom Fabrication',
       description: 'Bespoke aluminium solutions tailored to your specific requirements.',
       icon: '⚙️'
+    },
+    {
+      title: 'Invoice',
+      description: 'Professional invoicing services for your aluminium projects.',
+      icon: '📄',
+      link: '/invoice'
     }
   ]
 
@@ -92,10 +98,16 @@ function App() {
           <p className="section-subtitle">Quality aluminium solutions for every need</p>
           <div className="services-grid">
             {services.map((service, index) => (
-              <div key={index} className="service-card">
+              <div 
+                key={index} 
+                className={`service-card ${service.link ? 'clickable' : ''}`}
+                onClick={() => service.link && (window.location.href = service.link)}
+                style={service.link ? { cursor: 'pointer' } : {}}
+              >
                 <div className="service-icon">{service.icon}</div>
                 <h3 className="service-title">{service.title}</h3>
                 <p className="service-description">{service.description}</p>
+                {service.link && <p className="service-link">Click to access →</p>}
               </div>
             ))}
           </div>

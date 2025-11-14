@@ -276,6 +276,19 @@ section {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
 }
 
+.service-card.clickable:hover {
+  transform: translateY(-10px) scale(1.02);
+  border: 2px solid #64b5f6;
+}
+
+.service-link {
+  color: #64b5f6;
+  font-weight: 600;
+  margin-top: 1rem;
+  font-size: 0.95rem;
+}
+
+
 .service-icon {
   font-size: 4rem;
   margin-bottom: 1rem;
