@@ -219,7 +219,7 @@ function App() {
                 <div className="form-group">
                   <textarea rows="5" placeholder="Tell us about your project..." required></textarea>
                 </div>
-                <button type="submit" className="submit-button">Send Message via WhatsApp</button>
+                <button type="submit" className="submit-button">Send Message</button>
               </form>
             </div>
           </div>
