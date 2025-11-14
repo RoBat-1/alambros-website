@@ -142,8 +142,17 @@ function App() {
               <div className="contact-item">
                 <div className="contact-icon">📞</div>
                 <div>
-                  <h3>Phone</h3>
-                  <p>+1 (555) 123-4567</p>
+                  <h3>Phone / WhatsApp</h3>
+                  <p>
+                    <a 
+                      href="https://wa.me/96171873635" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      style={{ color: 'inherit', textDecoration: 'none' }}
+                    >
+                      +961 71 873 635
+                    </a>
+                  </p>
                 </div>
               </div>
               <div className="contact-item">
