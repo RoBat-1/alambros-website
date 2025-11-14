@@ -3,6 +3,7 @@ import './App.css'
 
 function App() {
   const [activeSection, setActiveSection] = useState('home')
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   const services = [
     {
@@ -39,6 +40,7 @@ function App() {
 
   const scrollToSection = (sectionId) => {
     setActiveSection(sectionId)
+    setMobileMenuOpen(false)
     const element = document.getElementById(sectionId)
     element?.scrollIntoView({ behavior: 'smooth' })
   }
@@ -52,7 +54,14 @@ function App() {
             <span className="logo-icon">🔧</span>
             <span className="logo-text">ALAM BROS</span>
           </div>
-          <ul className="nav-menu">
+          <button 
+            className="mobile-menu-toggle"
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            aria-label="Toggle menu"
+          >
+            {mobileMenuOpen ? '✕' : '☰'}
+          </button>
+          <ul className={`nav-menu ${mobileMenuOpen ? 'mobile-open' : ''}`}>
             <li><button onClick={() => scrollToSection('home')} className={activeSection === 'home' ? 'active' : ''}>Home</button></li>
             <li><button onClick={() => scrollToSection('services')} className={activeSection === 'services' ? 'active' : ''}>Services</button></li>
             <li><button onClick={() => scrollToSection('about')} className={activeSection === 'about' ? 'active' : ''}>About</button></li>
