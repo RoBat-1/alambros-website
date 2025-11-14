@@ -159,7 +159,16 @@ function App() {
                 <div className="contact-icon">✉️</div>
                 <div>
                   <h3>Email</h3>
-                  <p>info@alambros.com</p>
+                  <p>
+                    <a 
+                      href="mailto:alamgroup7541@gmail.com" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      style={{ color: 'inherit', textDecoration: 'none' }}
+                    >
+                      alamgroup7541@gmail.com
+                    </a>
+                  </p>
                 </div>
               </div>
               <div className="contact-item">
