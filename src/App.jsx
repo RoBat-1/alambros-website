@@ -179,7 +179,16 @@ function App() {
               </div>
             </div>
             <div className="contact-form">
-              <form onSubmit={(e) => { e.preventDefault(); alert('Form submitted! This is a demo.'); }}>
+              <form onSubmit={(e) => { 
+                e.preventDefault(); 
+                const name = e.target.elements[0].value;
+                const email = e.target.elements[1].value;
+                const phone = e.target.elements[2].value;
+                const message = e.target.elements[3].value;
+                
+                const whatsappMessage = `Hello, my name is ${name}.%0A%0AEmail: ${email}%0APhone: ${phone}%0A%0AMessage: ${message}`;
+                window.open(`https://wa.me/96171873635?text=${whatsappMessage}`, '_blank');
+              }}>
                 <div className="form-group">
                   <input type="text" placeholder="Your Name" required />
                 </div>
@@ -192,7 +201,7 @@ function App() {
                 <div className="form-group">
                   <textarea rows="5" placeholder="Tell us about your project..." required></textarea>
                 </div>
-                <button type="submit" className="submit-button">Send Message</button>
+                <button type="submit" className="submit-button">Send Message via WhatsApp</button>
               </form>
             </div>
           </div>
