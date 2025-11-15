@@ -7,7 +7,7 @@ import InvoicePage from './pages/InvoicePage.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="/alam-bros-items">
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/invoice" element={<InvoicePage />} />
