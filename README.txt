@@ -8,9 +8,9 @@ Professional website for Alam Bros Aluminium Workshop featuring a complete busin
 
 LIVE WEBSITE
 ============
-https://alam-bros-items-4uqozbydj-robat-1s-projects.vercel.app
+https://alam-bros-items-9qu6jm2qo-robat-1s-projects.vercel.app
 
-GitHub Repository: https://github.com/RoBat-1/alam-bros-items
+GitHub Repository: https://github.com/RoBat-1/alambros-website
 
 
 FEATURES
