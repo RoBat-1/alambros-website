@@ -4,7 +4,7 @@ ALAM BROS ALUMINIUM WORKSHOP WEBSITE
 
 PROJECT OVERVIEW
 ================
-Professional website for Alam Bros Aluminium Workshop featuring a complete business showcase and invoice management system.
+Professional website for Alam Bros Aluminium Workshop featuring a complete business showcase.
 
 LIVE WEBSITE
 ============
@@ -22,10 +22,9 @@ FEATURES
 ✓ Responsive Design - Works on all devices (desktop, tablet, mobile)
 ✓ Modern UI - Professional gradient designs and animations
 ✓ Navigation Menu - Smooth scrolling with hamburger menu for mobile
-✓ Services Showcase - 6 core services + invoice system
+✓ Services Showcase - 6 core aluminium services
 ✓ About Section - Company information and features
 ✓ Contact Integration - WhatsApp and email links
-✓ Professional Invoice System - Manual entry with calculations
 ✓ Mobile Optimized - Touch-friendly with breakpoints at 1024px, 768px, 480px
 
 
@@ -44,19 +43,6 @@ SERVICES OFFERED
 4. Partitions - Office and residential partitions
 5. Curtain Walls - Energy-efficient systems
 6. Custom Fabrication - Bespoke aluminium solutions
-7. Invoice System - Professional invoicing for projects
-
-
-INVOICE SYSTEM FEATURES
-=======================
-✓ Manual item entry (name, price, length, quantity)
-✓ Automatic calculations (price × length × quantity)
-✓ 11% tax calculation
-✓ Real-time total updates
-✓ WhatsApp invoice sending
-✓ Professional table layout
-✓ Mobile responsive design
-✓ Clear invoice button
 
 
 TECHNOLOGY STACK
@@ -78,9 +64,6 @@ alam-bros-items/
 │   ├── App.css                    # Main page styles
 │   ├── main.jsx                   # App entry point with routing
 │   ├── index.css                  # Global styles
-│   ├── pages/
-│   │   ├── InvoicePage.jsx        # Invoice system component
-│   │   └── InvoicePage.css        # Invoice page styles
 │   └── assets/
 ├── index.html                     # HTML entry point
 ├── package.json                   # Dependencies
@@ -149,7 +132,6 @@ RESPONSIVE BREAKPOINTS
 KEY PAGES
 =========
 1. Home (/) - Main landing page with all sections
-2. Invoice (/invoice) - Professional invoice management system
 
 
 FUTURE ENHANCEMENTS
@@ -190,19 +172,23 @@ DEVELOPER NOTES
 - WhatsApp links use wa.me API format
 - Email links use mailto protocol
 - Mobile menu uses CSS transitions
-- Invoice calculations handle edge cases (no length = price × quantity only)
 - All external links open in new tab (target="_blank")
 - Images and icons use emoji for simplicity and compatibility
 
 
 VERSION HISTORY
 ===============
+v1.1.0 (November 19, 2025)
+- Added multi-language support (Arabic, English, French)
+- Arabic set as default language
+- RTL support for Arabic
+- Language switcher in navigation
+
 v1.0.0 (November 14, 2025)
 - Initial release
 - Complete website with all sections
 - Mobile-responsive design
 - WhatsApp and email integration
-- Professional invoice system
 - Vercel deployment
 
 ====================================
