@@ -10,7 +10,7 @@ function App() {
   const translations = {
     ar: {
       home: 'الرئيسية',
-      services: 'الخدمات',
+      servicesNav: 'الخدمات',
       about: 'عن الشركة',
       contact: 'اتصل بنا',
       heroTitle: 'إخوان العلم',
@@ -53,7 +53,7 @@ function App() {
     },
     en: {
       home: 'Home',
-      services: 'Services',
+      servicesNav: 'Services',
       about: 'About',
       contact: 'Contact',
       heroTitle: 'ALAM BROS',
@@ -96,7 +96,7 @@ function App() {
     },
     fr: {
       home: 'Accueil',
-      services: 'Services',
+      servicesNav: 'Services',
       about: 'À propos',
       contact: 'Contact',
       heroTitle: 'ALAM BROS',
@@ -199,7 +199,7 @@ function App() {
           </button>
           <ul className={`nav-menu ${mobileMenuOpen ? 'mobile-open' : ''}`}>
             <li><button onClick={() => scrollToSection('home')} className={activeSection === 'home' ? 'active' : ''}>{t.home}</button></li>
-            <li><button onClick={() => scrollToSection('services')} className={activeSection === 'services' ? 'active' : ''}>{t.services}</button></li>
+            <li><button onClick={() => scrollToSection('services')} className={activeSection === 'services' ? 'active' : ''}>{t.servicesNav}</button></li>
             <li><button onClick={() => scrollToSection('about')} className={activeSection === 'about' ? 'active' : ''}>{t.about}</button></li>
             <li><button onClick={() => scrollToSection('contact')} className={activeSection === 'contact' ? 'active' : ''}>{t.contact}</button></li>
           </ul>
