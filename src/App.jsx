@@ -164,27 +164,16 @@ function App() {
           
           {/* Language Selector */}
           <div className="language-selector">
-            <button 
-              onClick={() => changeLanguage('ar')} 
-              className={language === 'ar' ? 'active' : ''}
-              title="العربية"
+            <span className="globe-icon">🌐</span>
+            <select 
+              value={language} 
+              onChange={(e) => changeLanguage(e.target.value)}
+              className="language-dropdown"
             >
-              AR
-            </button>
-            <button 
-              onClick={() => changeLanguage('en')} 
-              className={language === 'en' ? 'active' : ''}
-              title="English"
-            >
-              EN
-            </button>
-            <button 
-              onClick={() => changeLanguage('fr')} 
-              className={language === 'fr' ? 'active' : ''}
-              title="Français"
-            >
-              FR
-            </button>
+              <option value="ar">العربية</option>
+              <option value="en">English</option>
+              <option value="fr">Français</option>
+            </select>
           </div>
 
           <button 
