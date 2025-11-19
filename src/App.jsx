@@ -47,8 +47,7 @@ function App() {
         { title: 'الدرابزين والحواجز', description: 'درابزين ألمنيوم أنيق ومتين للسلامة والجاذبية الجمالية.', icon: '🛡️' },
         { title: 'الفواصل', description: 'فواصل للمكاتب والمنازل بإطارات ألمنيوم أنيقة.', icon: '📐' },
         { title: 'الجدران الساترة', description: 'أنظمة جدران ساترة موفرة للطاقة للعمارة الحديثة.', icon: '🏗️' },
-        { title: 'التصنيع المخصص', description: 'حلول ألمنيوم مخصصة مصممة حسب متطلباتك الخاصة.', icon: '⚙️' },
-        { title: 'الفاتورة', description: 'خدمات إصدار فواتير احترافية لمشاريع الألمنيوم الخاصة بك.', icon: '📄', link: '/invoice' }
+        { title: 'التصنيع المخصص', description: 'حلول ألمنيوم مخصصة مصممة حسب متطلباتك الخاصة.', icon: '⚙️' }
       ]
     },
     en: {
@@ -90,8 +89,7 @@ function App() {
         { title: 'Railings & Balustrades', description: 'Elegant and durable aluminium railings for safety and aesthetic appeal.', icon: '🛡️' },
         { title: 'Partitions', description: 'Office and residential partitions with sleek aluminium frames.', icon: '📐' },
         { title: 'Curtain Walls', description: 'Energy-efficient curtain wall systems for modern architecture.', icon: '🏗️' },
-        { title: 'Custom Fabrication', description: 'Bespoke aluminium solutions tailored to your specific requirements.', icon: '⚙️' },
-        { title: 'Invoice', description: 'Professional invoicing services for your aluminium projects.', icon: '📄', link: '/invoice' }
+        { title: 'Custom Fabrication', description: 'Bespoke aluminium solutions tailored to your specific requirements.', icon: '⚙️' }
       ]
     },
     fr: {
@@ -133,8 +131,7 @@ function App() {
         { title: 'Garde-corps et Balustrades', description: 'Garde-corps en aluminium élégants et durables pour la sécurité et l\'attrait esthétique.', icon: '🛡️' },
         { title: 'Cloisons', description: 'Cloisons de bureau et résidentielles avec des cadres en aluminium élégants.', icon: '📐' },
         { title: 'Murs-rideaux', description: 'Systèmes de murs-rideaux économes en énergie pour l\'architecture moderne.', icon: '🏗️' },
-        { title: 'Fabrication Sur Mesure', description: 'Solutions en aluminium sur mesure adaptées à vos besoins spécifiques.', icon: '⚙️' },
-        { title: 'Facture', description: 'Services de facturation professionnels pour vos projets en aluminium.', icon: '📄', link: '/invoice' }
+        { title: 'Fabrication Sur Mesure', description: 'Solutions en aluminium sur mesure adaptées à vos besoins spécifiques.', icon: '⚙️' }
       ]
     }
   }
