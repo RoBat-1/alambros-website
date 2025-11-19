@@ -11,6 +11,15 @@ html {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* RTL Support */
+html[dir="rtl"] {
+  direction: rtl;
+}
+
+html[dir="rtl"] body {
+  text-align: right;
+}
+
 body {
   overflow-x: hidden;
   width: 100%;
@@ -20,6 +29,11 @@ body {
   width: 100%;
   overflow-x: hidden;
   min-height: 100vh;
+}
+
+.app.rtl {
+  direction: rtl;
+  text-align: right;
 }
 
 /* Navigation */
@@ -61,6 +75,37 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+}
+
+/* Language Selector */
+.language-selector {
+  display: flex;
+  gap: 0.5rem;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 0.25rem;
+  border-radius: 8px;
+}
+
+.language-selector button {
+  background: transparent;
+  border: none;
+  color: #fff;
+  padding: 0.5rem 0.75rem;
+  cursor: pointer;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  font-family: inherit;
+}
+
+.language-selector button:hover {
+  background: rgba(100, 181, 246, 0.2);
+}
+
+.language-selector button.active {
+  background: linear-gradient(135deg, #64b5f6 0%, #42a5f5 100%);
+  color: #fff;
 }
 
 .nav-menu {
@@ -778,5 +823,59 @@ section {
   .service-card:active {
     transform: scale(0.98);
   }
+
+  .language-selector {
+    order: -1;
+    margin-bottom: 0.5rem;
+  }
+
+  .nav-container {
+    flex-wrap: wrap;
+  }
 }
 
+/* RTL Specific Styles */
+.app.rtl .logo {
+  flex-direction: row-reverse;
+}
+
+.app.rtl .nav-menu {
+  flex-direction: row-reverse;
+}
+
+.app.rtl .services-grid {
+  direction: rtl;
+}
+
+.app.rtl .about-features {
+  direction: rtl;
+}
+
+.app.rtl .contact-content {
+  direction: rtl;
+}
+
+.app.rtl .feature {
+  flex-direction: row-reverse;
+}
+
+.app.rtl .contact-item {
+  text-align: right;
+}
+
+.app.rtl .form-group input,
+.app.rtl .form-group textarea {
+  text-align: right;
+}
+
+/* Arabic Font Support */
+.app.rtl {
+  font-family: 'Segoe UI', 'Tahoma', 'Arial', sans-serif;
+}
+
+.app.rtl .hero-title,
+.app.rtl .hero-subtitle,
+.app.rtl .section-title {
+  font-family: 'Segoe UI', 'Tahoma', 'Arial', sans-serif;
+  font-weight: 700;
+}
