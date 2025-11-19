@@ -16,6 +16,9 @@ GitHub Repository: https://github.com/RoBat-1/alambros-website
 
 FEATURES
 ========
+✓ Multi-Language Support - Arabic (default), English, and French
+✓ Language Switcher - Easy toggle between AR/EN/FR
+✓ RTL Support - Full right-to-left layout for Arabic
 ✓ Responsive Design - Works on all devices (desktop, tablet, mobile)
 ✓ Modern UI - Professional gradient designs and animations
 ✓ Navigation Menu - Smooth scrolling with hamburger menu for mobile
